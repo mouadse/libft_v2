@@ -6,7 +6,7 @@
 /*   By: msennane <msennane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 19:21:56 by msennane          #+#    #+#             */
-/*   Updated: 2023/11/27 00:49:36 by msennane         ###   ########.fr       */
+/*   Updated: 2023/12/05 19:47:57 by msennane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (s)
-		write(fd, s, ft_strlen(s));
+	if (!(s))
+		return ;
+	write(fd, s, ft_strlen(s));
 }
